@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D685272141732BEAEEB3B3F0 /* Pods_RegularReddit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6A149A29D99FC15C4552A7 /* Pods_RegularReddit.framework */; };
 		E3C58CC92108E63600A9414C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C58CC82108E63600A9414C /* AppDelegate.swift */; };
 		E3C58CCB2108E63600A9414C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C58CCA2108E63600A9414C /* ViewController.swift */; };
 		E3C58CCE2108E63600A9414C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C58CCC2108E63600A9414C /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A6A149A29D99FC15C4552A7 /* Pods_RegularReddit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegularReddit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEED7D418A1EEF0052D478F3 /* Pods-RegularReddit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegularReddit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RegularReddit/Pods-RegularReddit.debug.xcconfig"; sourceTree = "<group>"; };
 		E3C58CC52108E63600A9414C /* RegularReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegularReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C58CC82108E63600A9414C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C58CCA2108E63600A9414C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		E3C58CCF2108E63700A9414C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3C58CD22108E63700A9414C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3C58CD42108E63700A9414C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF8A507ACE6EEA954CD38499 /* Pods-RegularReddit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegularReddit.release.xcconfig"; path = "Pods/Target Support Files/Pods-RegularReddit/Pods-RegularReddit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D685272141732BEAEEB3B3F0 /* Pods_RegularReddit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05EBF73C72E2D89A6DB33004 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEED7D418A1EEF0052D478F3 /* Pods-RegularReddit.debug.xcconfig */,
+				FF8A507ACE6EEA954CD38499 /* Pods-RegularReddit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DBE8B34898A58C9B114980DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A6A149A29D99FC15C4552A7 /* Pods_RegularReddit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E3C58CBC2108E63600A9414C = {
 			isa = PBXGroup;
 			children = (
 				E3C58CC72108E63600A9414C /* RegularReddit */,
 				E3C58CC62108E63600A9414C /* Products */,
+				05EBF73C72E2D89A6DB33004 /* Pods */,
+				DBE8B34898A58C9B114980DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3C58CD72108E63700A9414C /* Build configuration list for PBXNativeTarget "RegularReddit" */;
 			buildPhases = (
+				E8CD11476C838A3DA12437A2 /* [CP] Check Pods Manifest.lock */,
 				E3C58CC12108E63600A9414C /* Sources */,
 				E3C58CC22108E63600A9414C /* Frameworks */,
 				E3C58CC32108E63600A9414C /* Resources */,
+				8CC2C869433245060D6B28BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CC2C869433245060D6B28BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RegularReddit/Pods-RegularReddit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PinkyPromise/PinkyPromise.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinkyPromise.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RegularReddit/Pods-RegularReddit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CD11476C838A3DA12437A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RegularReddit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3C58CC12108E63600A9414C /* Sources */ = {
@@ -278,6 +343,7 @@
 		};
 		E3C58CD82108E63700A9414C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEED7D418A1EEF0052D478F3 /* Pods-RegularReddit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +362,7 @@
 		};
 		E3C58CD92108E63700A9414C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8A507ACE6EEA954CD38499 /* Pods-RegularReddit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
