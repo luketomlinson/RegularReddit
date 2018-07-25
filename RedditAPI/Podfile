@@ -1,10 +1,15 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'RegularReddit' do
+target 'RedditAPI' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'PinkyPromise'
-  # Pods for RegularReddit
+
+  # Pods for RedditAPI
+
+  target 'RedditAPITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
 end
