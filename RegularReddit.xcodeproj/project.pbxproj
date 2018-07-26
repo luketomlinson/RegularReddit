@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		E3AF46FD210A257400D4E640 /* PinkyPromise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AF46FC210A257400D4E640 /* PinkyPromise.framework */; };
 		E3AF46FE210A257F00D4E640 /* PinkyPromise.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3AF46FC210A257400D4E640 /* PinkyPromise.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3AF4706210A25C300D4E640 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AF4705210A25C300D4E640 /* API.swift */; };
+		E3AF470A210A25EA00D4E640 /* PinkyPromise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AF46FC210A257400D4E640 /* PinkyPromise.framework */; };
+		E3AF470C210A261F00D4E640 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AF470B210A261F00D4E640 /* APIRequest.swift */; };
+		E3AF470E210A262E00D4E640 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AF470D210A262E00D4E640 /* APIResponse.swift */; };
+		E3AF4710210A279500D4E640 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AF470F210A279500D4E640 /* APIError.swift */; };
+		E3AF4713210A395D00D4E640 /* URLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AF4712210A395D00D4E640 /* URLSession+Promise.swift */; };
 		E3C58CC92108E63600A9414C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C58CC82108E63600A9414C /* AppDelegate.swift */; };
 		E3C58CCE2108E63600A9414C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C58CCC2108E63600A9414C /* Main.storyboard */; };
 		E3C58CD02108E63700A9414C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C58CCF2108E63700A9414C /* Assets.xcassets */; };
@@ -26,10 +32,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3AF4701210A25C300D4E640 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E3AF46FC210A257400D4E640 /* PinkyPromise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PinkyPromise.framework; path = Carthage/Build/iOS/PinkyPromise.framework; sourceTree = "<group>"; };
+		E3AF4703210A25C300D4E640 /* libAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3AF4705210A25C300D4E640 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E3AF470B210A261F00D4E640 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		E3AF470D210A262E00D4E640 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		E3AF470F210A279500D4E640 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		E3AF4712210A395D00D4E640 /* URLSession+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Promise.swift"; sourceTree = "<group>"; };
 		E3C58CC52108E63600A9414C /* RegularReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegularReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C58CC82108E63600A9414C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C58CCD2108E63600A9414C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +60,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E3AF4700210A25C300D4E640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3AF470A210A25EA00D4E640 /* PinkyPromise.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E3C58CC22108E63600A9414C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,10 +87,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E3AF4704210A25C300D4E640 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E3AF4705210A25C300D4E640 /* API.swift */,
+				E3AF470B210A261F00D4E640 /* APIRequest.swift */,
+				E3AF470D210A262E00D4E640 /* APIResponse.swift */,
+				E3AF470F210A279500D4E640 /* APIError.swift */,
+				E3AF4712210A395D00D4E640 /* URLSession+Promise.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		E3C58CBC2108E63600A9414C = {
 			isa = PBXGroup;
 			children = (
 				E3C58CC72108E63600A9414C /* RegularReddit */,
+				E3AF4704210A25C300D4E640 /* API */,
 				E3C58CC62108E63600A9414C /* Products */,
 				E3AF46F6210A245F00D4E640 /* Frameworks */,
 			);
@@ -71,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				E3C58CC52108E63600A9414C /* RegularReddit.app */,
+				E3AF4703210A25C300D4E640 /* libAPI.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +133,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E3AF4702210A25C300D4E640 /* API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3AF4707210A25C300D4E640 /* Build configuration list for PBXNativeTarget "API" */;
+			buildPhases = (
+				E3AF46FF210A25C300D4E640 /* Sources */,
+				E3AF4700210A25C300D4E640 /* Frameworks */,
+				E3AF4701210A25C300D4E640 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = API;
+			productName = API;
+			productReference = E3AF4703210A25C300D4E640 /* libAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		E3C58CC42108E63600A9414C /* RegularReddit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3C58CD72108E63700A9414C /* Build configuration list for PBXNativeTarget "RegularReddit" */;
@@ -118,6 +178,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Luke Tomlinson";
 				TargetAttributes = {
+					E3AF4702210A25C300D4E640 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					E3C58CC42108E63600A9414C = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -137,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				E3C58CC42108E63600A9414C /* RegularReddit */,
+				E3AF4702210A25C300D4E640 /* API */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +219,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E3AF46FF210A25C300D4E640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3AF470C210A261F00D4E640 /* APIRequest.swift in Sources */,
+				E3AF4710210A279500D4E640 /* APIError.swift in Sources */,
+				E3AF4706210A25C300D4E640 /* API.swift in Sources */,
+				E3AF470E210A262E00D4E640 /* APIResponse.swift in Sources */,
+				E3AF4713210A395D00D4E640 /* URLSession+Promise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E3C58CC12108E63600A9414C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +261,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E3AF4708210A25C300D4E640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UMFPW78PV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3AF4709210A25C300D4E640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UMFPW78PV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E3C58CD52108E63700A9414C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -346,6 +456,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E3AF4707210A25C300D4E640 /* Build configuration list for PBXNativeTarget "API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3AF4708210A25C300D4E640 /* Debug */,
+				E3AF4709210A25C300D4E640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E3C58CC02108E63600A9414C /* Build configuration list for PBXProject "RegularReddit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
