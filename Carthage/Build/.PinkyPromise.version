@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 9.4.1\nBuild version 9F2000",
+  "commitish" : "0.6.0",
+  "iOS" : [
+    {
+      "hash" : "04d4e50fbd342a2ad198f5f9d6e199515d989c281bc9b5be3e33928fc818e4ff",
+      "name" : "PinkyPromise"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+framework module PinkyPromise {
+    header "PinkyPromise-Swift.h"
+    requires objc
+}

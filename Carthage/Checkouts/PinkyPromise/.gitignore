@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Xcode
+xcuserdata
+
+# swift-build
+/.build
+
+# fastlane
+/fastlane/README.md
+/fastlane/report.xml
+/fastlane/test_output
+
+# xcodebuild via jazzy
+/build
+
+# Carthage
+Carthage/
