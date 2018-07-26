@@ -33,7 +33,7 @@ extension URLSession {
 
                 fulfill(.success(data))
 
-                }.resume()
+            }.resume()
         }
     }
 }
