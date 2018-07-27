@@ -8,14 +8,18 @@
 
 import Foundation
 import PinkyPromise
+import Model
 
-class APIService {
+public class APIService {
 
+    enum Config {
+        static let baseURL = URL(string: "https://reddit.com/")!
+    }
 
     let session: URLSession
     let decoder = JSONDecoder()
 
-    init(session: URLSession = .shared) {
+    public init(session: URLSession = .shared) {
         self.session = session
     }
 
@@ -24,6 +28,16 @@ class APIService {
             return try self.decoder.decode(T.ResponseType.self, from: data)
         }
     }
-
 }
 
+public extension APIService {
+    func getPopular() -> Promise<[Post]> {
+
+        let url = Config.baseURL.appendingJSONPath()
+        let request = PopularPostsRequest(url: url)
+
+        return get(with: request).map { response in
+            return response.data.children.map { $0.data }
+        }
+    }
+}

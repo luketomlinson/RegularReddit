@@ -12,3 +12,13 @@ protocol APIRequest {
     associatedtype ResponseType: APIResponse
     var urlRequest: URLRequest { get }
 }
+
+struct PopularPostsRequest: APIRequest {
+    typealias ResponseType = RedditResponse
+    let urlRequest: URLRequest
+
+    init(url: URL) {
+        self.urlRequest = URLRequest(url: url)
+    }
+
+}

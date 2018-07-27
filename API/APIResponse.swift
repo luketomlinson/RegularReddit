@@ -7,7 +7,21 @@
 //
 
 import Foundation
+import Model
 
-protocol APIResponse: Codable {
+protocol APIResponse: Decodable {
     
+}
+
+struct RedditResponse: APIResponse {
+    let kind: String?
+    let data: ResponseData
+}
+
+struct ResponseData: Decodable {
+    let children: [PostData]
+}
+
+struct PostData: Decodable {
+    let data: Post
 }

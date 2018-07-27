@@ -58,7 +58,7 @@
         <!--Item 1-->
         <scene sceneID="2ch-j7-SBh">
             <objects>
-                <viewController id="jfV-dd-AQ1" sceneMemberID="viewController">
+                <viewController id="jfV-dd-AQ1" customClass="PopularPostsViewController" customModule="RegularReddit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5oP-aR-m8A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
