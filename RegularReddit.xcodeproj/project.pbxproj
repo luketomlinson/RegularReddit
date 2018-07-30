@@ -21,6 +21,13 @@
 		E31AB643210B6FBF00706DDE /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31AB61D210B621500706DDE /* API.framework */; };
 		E31AB644210B6FBF00706DDE /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AF4719210A606D00D4E640 /* Model.framework */; };
 		E357CFC9210B721100C77A47 /* URL+Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357CFC8210B721100C77A47 /* URL+Reddit.swift */; };
+		E357CFCC210B91CB00C77A47 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357CFCA210B91CB00C77A47 /* PostTableViewCell.swift */; };
+		E357CFCD210B91CB00C77A47 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E357CFCB210B91CB00C77A47 /* PostTableViewCell.xib */; };
+		E357CFCF210B930F00C77A47 /* AsynchronousImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357CFCE210B930F00C77A47 /* AsynchronousImageView.swift */; };
+		E357CFD1210B990700C77A47 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357CFD0210B990700C77A47 /* Loading.swift */; };
+		E357CFD3210BAC1900C77A47 /* PopularSectionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357CFD2210BAC1900C77A47 /* PopularSectionsGenerator.swift */; };
+		E357CFD5210BAE3F00C77A47 /* PopularTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357CFD4210BAE3F00C77A47 /* PopularTableController.swift */; };
+		E357CFD9210F559E00C77A47 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357CFD8210F559E00C77A47 /* ReusableView.swift */; };
 		E3AF46FD210A257400D4E640 /* PinkyPromise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AF46FC210A257400D4E640 /* PinkyPromise.framework */; };
 		E3AF46FE210A257F00D4E640 /* PinkyPromise.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3AF46FC210A257400D4E640 /* PinkyPromise.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E3AF4722210A606D00D4E640 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AF4719210A606D00D4E640 /* Model.framework */; };
@@ -87,6 +94,13 @@
 		E31AB62E210B621500706DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E31AB641210B6E9F00706DDE /* PopularPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPostsViewController.swift; sourceTree = "<group>"; };
 		E357CFC8210B721100C77A47 /* URL+Reddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Reddit.swift"; sourceTree = "<group>"; };
+		E357CFCA210B91CB00C77A47 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		E357CFCB210B91CB00C77A47 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		E357CFCE210B930F00C77A47 /* AsynchronousImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousImageView.swift; sourceTree = "<group>"; };
+		E357CFD0210B990700C77A47 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		E357CFD2210BAC1900C77A47 /* PopularSectionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSectionsGenerator.swift; sourceTree = "<group>"; };
+		E357CFD4210BAE3F00C77A47 /* PopularTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableController.swift; sourceTree = "<group>"; };
+		E357CFD8210F559E00C77A47 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		E3AF46FC210A257400D4E640 /* PinkyPromise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PinkyPromise.framework; path = Carthage/Build/iOS/PinkyPromise.framework; sourceTree = "<group>"; };
 		E3AF4705210A25C300D4E640 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E3AF470B210A261F00D4E640 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
@@ -236,7 +250,14 @@
 			isa = PBXGroup;
 			children = (
 				E3C58CC82108E63600A9414C /* AppDelegate.swift */,
+				E357CFCA210B91CB00C77A47 /* PostTableViewCell.swift */,
+				E357CFCB210B91CB00C77A47 /* PostTableViewCell.xib */,
 				E31AB641210B6E9F00706DDE /* PopularPostsViewController.swift */,
+				E357CFD2210BAC1900C77A47 /* PopularSectionsGenerator.swift */,
+				E357CFD4210BAE3F00C77A47 /* PopularTableController.swift */,
+				E357CFCE210B930F00C77A47 /* AsynchronousImageView.swift */,
+				E357CFD0210B990700C77A47 /* Loading.swift */,
+				E357CFD8210F559E00C77A47 /* ReusableView.swift */,
 				E3C58CCC2108E63600A9414C /* Main.storyboard */,
 				E3C58CCF2108E63700A9414C /* Assets.xcassets */,
 				E3C58CD12108E63700A9414C /* LaunchScreen.storyboard */,
@@ -447,6 +468,7 @@
 				E3C58CD32108E63700A9414C /* LaunchScreen.storyboard in Resources */,
 				E3C58CD02108E63700A9414C /* Assets.xcassets in Resources */,
 				E3C58CCE2108E63600A9414C /* Main.storyboard in Resources */,
+				E357CFCD210B91CB00C77A47 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,8 +517,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E357CFCF210B930F00C77A47 /* AsynchronousImageView.swift in Sources */,
+				E357CFD5210BAE3F00C77A47 /* PopularTableController.swift in Sources */,
 				E31AB642210B6E9F00706DDE /* PopularPostsViewController.swift in Sources */,
+				E357CFD9210F559E00C77A47 /* ReusableView.swift in Sources */,
+				E357CFD1210B990700C77A47 /* Loading.swift in Sources */,
 				E3C58CC92108E63600A9414C /* AppDelegate.swift in Sources */,
+				E357CFCC210B91CB00C77A47 /* PostTableViewCell.swift in Sources */,
+				E357CFD3210BAC1900C77A47 /* PopularSectionsGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

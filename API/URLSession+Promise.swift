@@ -9,7 +9,7 @@
 import Foundation
 import PinkyPromise
 
-extension URLSession {
+public extension URLSession {
 
     func dataPromise(withRequest request: URLRequest) -> Promise<Data> {
         return Promise { [weak self] fulfill in
@@ -34,6 +34,15 @@ extension URLSession {
                 fulfill(.success(data))
 
             }.resume()
+        }
+    }
+
+    func imagePromise(withRequest request: URLRequest) -> Promise<UIImage> {
+        return dataPromise(withRequest: request).tryMap { data in
+            guard let image =  UIImage(data: data) else {
+                throw APIError.invalidResponse
+            }
+            return image
         }
     }
 }

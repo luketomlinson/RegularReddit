@@ -6,17 +6,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RegularReddit/PopularPostsViewController.swift"
-            timestampString = "554400174.607077"
+            timestampString = "554654141.588304"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RegularReddit/PopularTableController.swift"
+            timestampString = "554654141.588398"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "update(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RegularReddit.PopularTableController.update(with: RegularReddit.LoadingState&lt;Swift.Array&lt;Model.Post&gt;&gt;) -&gt; ()"
+                  moduleName = "RegularReddit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luketomlinson/WillowTree/RegularReddit/RegularReddit/PopularTableController.swift"
+                  timestampString = "554654141.688143"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in RegularReddit.PopularTableController.update(with: RegularReddit.LoadingState&lt;Swift.Array&lt;Model.Post&gt;&gt;) -&gt; ()"
+                  moduleName = "RegularReddit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luketomlinson/WillowTree/RegularReddit/RegularReddit/PopularTableController.swift"
+                  timestampString = "554654141.690877"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

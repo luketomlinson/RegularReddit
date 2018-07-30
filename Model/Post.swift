@@ -8,11 +8,16 @@
 
 import Foundation
 
-public struct Post: Decodable {
+public protocol Loadable { } //marker protocol
+public struct Post: Decodable, Loadable {
 
-    let title: String
-    let text: String
-    let preview: Preview?
+    public let title: String
+    public let text: String
+    public let preview: Preview
+
+    public var imageURL: URL? {
+        return preview.images.first?.source.url
+    }
 
     enum CodingKeys: String, CodingKey {
         case title
@@ -21,17 +26,17 @@ public struct Post: Decodable {
     }
 }
 
-struct Image: Decodable {
+public struct Image: Decodable {
     let url: URL
     let width: Int
     let height: Int
 }
 
-struct ImageContainer: Decodable {
-    let source: Image
-    let resolutions: [Image]
+public struct ImageContainer: Decodable {
+    public let source: Image
+    public let resolutions: [Image]
 }
 
-struct Preview: Decodable {
-    let images: [ImageContainer]
+public struct Preview: Decodable {
+    public let images: [ImageContainer]
 }
